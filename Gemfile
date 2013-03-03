@@ -12,9 +12,9 @@ gem 'rails', '3.2.11'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
+  gem "jquery-fileupload-rails"
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
 end
@@ -35,3 +35,29 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem "mongoid"
+gem "rspec-rails", :group => [:development, :test]
+gem "capybara", :group => :test
+gem "database_cleaner", :group => :test
+gem "mongoid-rspec", :group => :test
+gem "email_spec", :group => :test
+gem "launchy", :group => :test
+gem "factory_girl_rails", :group => [:development, :test]
+gem "devise"
+gem "less-rails"
+gem "twitter-bootstrap-rails"
+gem 'less-rails-bootstrap'
+gem 'carrierwave'
+gem 'rmagick'
+gem 'bson_ext'
+gem 'will_paginate', '~> 3.0.3'
+gem 'will_paginate-bootstrap'
+gem 'bootstrap-components-helpers',
+    :git => 'git://gist.github.com/2117187.git'
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+  gem 'haml-rails'
+end
